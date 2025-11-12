@@ -48,7 +48,7 @@ Frontend:
 
 ```typescript
 async executeStepTask(stepId: number, sessionId: number): Promise<Response> {
-  return fetchPost(`/api/workflows/steps/${stepId}/execute-task`, { sessionId });
+  return fetchPost('/api/workflows/steps/' + stepId + '/execute-task', { sessionId });
 }
 ```
 
